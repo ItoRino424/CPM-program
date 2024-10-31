@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CPM-program">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/hataraku.png">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CPM-program</title>
+</head>
+<body>
+ <main>                                  
+         <div class="main-flex">
+                <section class="view-left">
+                    <div class="select-inner wrapper">
+                        <h2 class="section-title">自身スコア一覧</h2>
+                    <ul class="select-item">
+                        <li class="select-li"><a href="#"><div class="select-box"><div class="select-title-box"><p class="select-title">RinoIto</p></div><figure><%= image_tag '/squid.png' %></figure>
+                            <p class="select-text">Lv.17</p></div></a></li>
+                        <li class="select-li"><a href="#"><div class="select-box"><div class="select-title-box"><p class="select-title">総演習クリア数</p></div><figure><%= image_tag '/pc.png' %></figure>
+                            <p class="select-text">10個</p></div></a></li>
+                        <li class="select-li"><a href="#"><div class="select-box"><div class="select-title-box"><p class="select-title">週間達成度</p></div><figure><%= image_tag '/hart.png' %></figure>
+                            <p class="select-text">15％</p></div></a></li>
+                    </ul>
+                    </div>
+                    <div class="select-inner wrapper">
+                        <h2 class="section-title">Ruby問題</h2>
+                        <ul class="ruby-slide-nuv">
+                            <li class="ruby-slide-list"><p class="ruby-slide-title">1.プログラミングとは</p><p class="ruby-slide-text">・パソコンの使い方<br>・キーボードの打ち方<br>・プログラムの書き方</p></li>
+                            <li class="ruby-slide-list"><p class="ruby-slide-title">2.Rubyに触れてみよう</p><p class="ruby-slide-text">・値とは<br>・Rubyの計算<br>・変数とは</p></li>
+                        </ul>
+                        <ul class="ruby-slide-nuv">
+                            <li class="ruby-slide-list"><p class="ruby-slide-title">3.printとgetsとprintf</p><p class="ruby-slide-text">・printの使い方<br>・getsの使い方<br>・printfとは</p></li>
+                            <li class="ruby-slide-list"><p class="ruby-slide-title">4.演算とは</p><p class="ruby-slide-text">・演算について<br>・色々な計算をみよう<br>・trueとfalseとは</p></li>
+                        </ul>
+                    </div>
+                </section>
+                        <aside id="sidebar">
+                                    <section class="sidebar-box">
+                                        <div class="achieve-box">
+                                            <div class="achieve"><img src="/achieve.png" alt=""><p class="achive-text">3日連続ログイン達成</p></div>
+                                        </div>
+                                        <div class="corporate-box">
+                                            <div class="corporate-title-box"><p class="corporate-title">週間ランキング<span class="corporate-time">残り4日18:34</span></p></div>
+                                            <ul class="ranking-nuv">
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number gold">1位</span>広瀬雄二</p></a></li>
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number silber">2位</span>伊藤皓紀</p></a></li>
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number copper">3位</span>伊藤優</p></a></li>
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number">4位</span>伊藤理乃</p></a></li>
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number">5位</span>梅津航介</p></a></li>
+                                                <li class="ranking-list"><a href="#"><p class="ranking-name"><span class="ranking-number">6位</span>鎌上朝妃</p></a></li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <p class="season-slide-title">今までの応用問題</p>
+                                    <ul class="season-nuv">
+                                        <li class="season-list blue"><a href=""><span class="season-month">8月</span><p class="season-text">JavaScriptとは</p></a></li>
+                                        <li class="season-list green"><a href=""><span class="season-month">9月</span><p class="season-text">Rubyを強化しよう！</p></a></li>
+                                        <li class="season-list orange"><a href=""><span class="season-month">10月</span><p class="season-text">HTML&CSSとは</p></a></li>
+                                    </ul>
+                                </aside>
+                            </section>
+         </div>
+    </main>
+    <footer id="footer">
+        <small>&copy; 2022 プチ論研究-伊藤理乃</small>
+    </footer>
+</body>
+</html>

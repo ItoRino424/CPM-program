@@ -1,0 +1,5 @@
+<h2>ランキング</h2>
+
+<% @rankings.each_with_index do |(user, total_score), index| %>
+  <p><%= "#{index + 1}. #{user.name} - #{total_score} points" %></p>
+<% end %>

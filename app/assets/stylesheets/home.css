@@ -1,0 +1,239 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 100%;
+  background-color: #ffeeef;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "DotGothic16", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(20, 20, 20);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 1px;
+  transition: 0.5ms;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-around;
+  background-color: rgb(253, 252, 252);
+}
+#header .logo-space .title-logo a {
+  color: #17adec;
+}
+#header .header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header-list .header-list-item {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+#header .header-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header-list-icon .list-icon-item {
+  margin-right: 25px;
+}
+#header .header-list-icon .list-icon-item img {
+  width: 55px;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.main-flex .view-left {
+  width: 60%;
+}
+.main-flex .view-left .select-inner {
+  margin: 0 10px 0 10px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.section-title {
+  text-align: center;
+}
+.main-flex .view-left .select-inner .select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.select-li{
+  border-radius: 50%;
+  border: #818181 solid 2px;
+  height: 260px;
+  width: 260px;
+  background-color: #ffffff;
+  margin-right: 3px;
+}
+.select-li:hover{
+  opacity: 0.7;
+  transition: all 0.3s 0s ease;
+}
+
+.select-box .select-title-box{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.select-title-box .select-title{
+  width: 200px;
+  height: 45px;
+  display: inline-block;
+  padding-top: 2.5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.select-box .select-text{
+  margin-top: 1px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.select-box figure{
+  width: 85px;
+  margin: 0 auto;
+}
+.select-box img{
+  width: 85px;
+}
+.main-flex #sidebar {
+  width: 15%;
+}
+.achieve {
+  position: relative;
+}
+.main-flex #sidebar .sidebar-box .achieve img {
+  width: 30px;
+  position: absolute;
+}
+.main-flex #sidebar .sidebar-box .achieve .achive-text {
+  font-weight: bold;
+  position: absolute;
+  left: 40px;
+}
+.main-flex #sidebar .sidebar-box .corporate-box {
+  padding-top: 60px;
+}
+.main-flex #sidebar .sidebar-box .corporate-box .corporate-title-box .corporate-title {
+  font-weight: bold;
+}
+.corporate-title-box .corporate-time{
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.ranking-nuv{
+  margin-top: 30px;
+}
+.ranking-list{
+  margin-top: 15px;
+  padding: 4px 6px;
+  background-color: #ffffff;
+  border: #333 solid 2px;
+}
+.ranking-name{
+  margin-left: 20px;
+  font-weight: bold;
+}
+.ranking-number{
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+.ranking-list .gold{
+  color: #FFBE00;
+}
+.ranking-list .silber{
+  color: #A3A3A3;
+}
+.ranking-list .copper{
+  color: #F48C2B;
+}
+.season-slide-title{
+font-weight: bold;
+text-align: center;
+margin-top: 55px;
+margin-bottom: 30px;
+font-size: 1.1rem;
+}
+.season-list{
+padding: 30px 27px;
+margin-bottom: 20px;
+box-shadow: 0 0 8px gray;
+}
+.season-list a{
+color: #fff;
+}
+.season-month{
+color: #000;
+}
+.season-nuv .blue{
+background-color: #76D6FF;
+}
+.season-nuv .green{
+background-color: #77FF9D;
+}
+.season-nuv .orange{
+background-color: #FFD177;
+}
+.ruby-slide-nuv{
+margin-top: 90px;
+}
+.ruby-slide-list{
+background-color: #FFA5A5;
+width: 280px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+box-shadow: 0 0 8px gray;
+}
+.ruby-slide-title{
+font-weight: bold;
+}
+.ruby-slide-text{
+color: #fff;
+}
+.ruby-slide-nuv{
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.season-list{
+margin-bottom: 100px;
+}
+#footer{
+text-align: center;
+color: #fff;
+background-color: #454545;
+padding: 20px 0 20px 0;
+}

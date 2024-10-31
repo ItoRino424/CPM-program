@@ -1,0 +1,12 @@
+<div class="main users-index">
+  <div class="container">
+  <% @quizzes.each do |quiz| %>
+      <div class="users-index-item">
+        <div class="user-right">
+          <%= link_to(quiz.title, "/quizzes/#{quiz.id}") %>
+          <%= link_to(quiz.correct_answer, "/quizzes/#{quiz.id}") %>
+        </div>
+      </div>
+    <% end%>
+  </div>
+</div>

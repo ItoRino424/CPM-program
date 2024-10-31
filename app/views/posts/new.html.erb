@@ -1,0 +1,23 @@
+<div class="main posts-new">
+  <div class="container">
+  <h3 class="form-heading">問題：配列likeの中に自分の好きなものを値として３つ入れて、printfの文章を完成させてください。
+  printf("私の好きなことは、%sと%sと%sです。\n", like[0],like[1],like[2])</h3>
+  <p>応用問題に回答する</p>
+  <p>例：　伊藤理乃</p>
+  <p>　　　puts "こんにちは！"</p>
+    <%= form_tag("/posts/create") do %>
+      <div class="form">
+        <div class="form-body">
+          <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+          
+          <textarea name="content"><%= @post.content %></textarea>
+          <input type="submit" value="送信">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

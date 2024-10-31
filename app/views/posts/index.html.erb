@@ -1,0 +1,10 @@
+<div class="main posts-index">
+<h2 class="post-index-title">みんなの回答一覧</h2>
+  <div class="container-index post-slide-container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+      <%= link_to(post.content, "/posts/#{post.id}")%>
+      </div>
+    <% end %>
+  </div>
+</div>

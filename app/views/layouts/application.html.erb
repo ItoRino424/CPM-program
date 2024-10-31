@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CPM-program</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<header id="header">
+<div class="logo-space">
+    <h1 class="title-logo"><%= link_to("CPM-program","/")%></h1>
+</div>
+<nav class="header-nav-left">
+    <ul class="header-list">
+        <li class="header-list-item"><%= link_to("応用問題","/posts/new")%></li>
+        <li class="header-list-item"><%= link_to("Rubyクイズ","/seikou")%></li>
+        <li class="header-list-item"><%= link_to("応用問題みんなの回答","/posts/index")%></li>
+        <li class="header-list-item"><%= link_to("ログイン","/users/sign_up")%></li>
+        <li class="header-list-item"><%= link_to("クイズ","/quizzes/index")%></li>
+        <li class="header-list-item"><%= link_to("クイズ作成","/quizzes/new")%></li>
+        <li class="header-list-item"><%= link_to("ランキング","/rankings/index")%></li>
+    </ul>
+</nav>
+<nav class="header-nav-right">
+    <ul class="header-list-icon">
+
+    </ul>
+</nav>
+</header>
+<% if flash[:notice]%>
+<div class="flash">
+  <%= flash[:notice]%>
+</div>
+<% end %>
+    <%= yield %>
+  </body>
+</html>
+
